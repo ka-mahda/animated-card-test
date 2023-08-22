@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.css';
+import AnimatedCard from "./components/AnimatedCard";
 
 export default function Home() {
   return (
@@ -13,11 +14,7 @@ export default function Home() {
           
         </div>
       </div>
-
-      <div className={styles.center}>
-        <h1>The card should appear here.</h1>
-      </div>
-
+      <AnimatedCard/>
     </main>
   )
 }
